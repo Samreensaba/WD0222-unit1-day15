@@ -58,4 +58,46 @@ function longest_Array(arr1, arr2){
     }
 }
 longest_Array()
+console.log("\nExercise 30\n")
+function higher_Array(arr1, arr2){
+    arr1=[1,2,3,4,5]
+    arr2 = [6,5,4,3,2,1,8]
+    let sum1 = 0;
+    for(let i=0; i<arr1.length; i++){
+        sum1+= arr1[i]
+    }
+    console.log(sum1)
+    let sum2 = 0;
+    for(j=0; j<arr2.length; j++){
+        sum2+=arr2[j]
+    }
+    console.log(sum2)
+   if (sum1===sum2){
+        console.log("arr1 and arr2 is same")
+    }
+    else if (sum1<sum2){
+        console.log("arr2 has highest sum value")
+    }
+    else{
+        console.log("arr1 has highest sumvalue")
+    }
+}
+higher_Array()
+//*************** DOM Exercises*****************//
+function getAllTh(){
+    let ex31 = document.getElementsByTagName('th')
+}
+getAllTh()
+function textOfTh(){
+    let ex31 = document.getElementsByTagName('th')
+    for(let i=0; i<ex31.length; i++){
+        console.log(ex31[i].innerText)
+    }
+}
+textOfTh()
+function changeHeading(){
+    let headingNode = document.getElementsByTagName('h1')[0]
+    headingNode.innerText = "Hello I am Changed!"
+}
+
 
